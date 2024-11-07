@@ -5,7 +5,7 @@
         <div class="grid grid-cols-1 gap-4">
             <div>
                 <a href="{{ route('products.create') }}" class="bg-blue-500 text-white px-4 py-2 w-16  mb-6 rounded-md hover:bg-blue-600 transition duration-300">Create</a>
-                <a href="{{ route('products.create') }}" class="bg-blue-500 text-white px-4 py-2 w-16  mb-6 rounded-md hover:bg-blue-600 transition duration-300">Home</a>
+                <a href="{{ route('products.index') }}" class="bg-blue-500 text-white px-4 py-2 w-16  mb-6 rounded-md hover:bg-blue-600 transition duration-300">Home</a>
             </div>
             <form action="{{ route('products.index') }}" method="GET">
                 <input type="text" name="search" placeholder="Search products" class="border border-gray-300 rounded-md px-4 py-2 w-1/3" value="{{ request('search') }}">
